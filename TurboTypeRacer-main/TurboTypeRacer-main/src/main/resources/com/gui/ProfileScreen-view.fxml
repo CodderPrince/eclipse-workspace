@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" styleClass="containerBackground" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ProfileScreenController">
+   <top>
+      <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+         <Image url="@../../assets/sceneElements/label.png" />
+      </ImageView>
+   </top>
+   <center>
+      <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" styleClass="container" stylesheets="@../../styles/styles.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <HBox alignment="CENTER" prefHeight="364.0" prefWidth="1880.0" spacing="50.0">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="carVbox" stylesheets="@../../styles/styles.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <ImageView fx:id="upArrowBtn" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#changeCar" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <Image url="@../../assets/buttons/upBtn.png" />
+               </ImageView>
+               <ImageView fx:id="garageVehicleSelectionImageView" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../../assets/vehicles/car1.gif" />
+               </ImageView>
+               <ImageView fx:id="downArrowBtn" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#changeCar" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <Image url="@../../assets/buttons/downBtn.png" />
+               </ImageView>
+            </VBox>
+            <GridPane alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <TextField fx:id="userNameTextField" alignment="CENTER" editable="false" minHeight="139.0" minWidth="370.0" promptText="Username" styleClass="textField" stylesheets="@../../styles/styles.css" GridPane.valignment="CENTER">
+                  <font>
+                     <Font size="27.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="passwordField" alignment="CENTER" editable="false" minHeight="139.0" minWidth="370.0" promptText="Password" styleClass="textField" stylesheets="@../../styles/styles.css" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="27.0" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets />
+                  </GridPane.margin>
+               </TextField>
+            </GridPane>
+            <ImageView fx:id="profileImage" fitHeight="300.0" fitWidth="300.0">
+               <Image url="@../../assets/profile/profileIconBlue.png" />
+            </ImageView>
+            <GridPane alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <TextField fx:id="phoneNumberField" alignment="CENTER" editable="false" minHeight="139.0" minWidth="370.0" promptText="PhoneNumber" styleClass="textField" stylesheets="@../../styles/styles.css">
+                  <font>
+                     <Font size="27.0" />
+                  </font>
+               </TextField>
+               <ImageView fx:id="updateBtn" fitHeight="190.0" fitWidth="422.0" onMouseClicked="#updateClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" styleClass="child" GridPane.rowIndex="1">
+                  <Image url="@../../assets/buttons/updateBtn.png" />
+               </ImageView>
+            </GridPane>
+            <ListView fx:id="statsList" nodeOrientation="LEFT_TO_RIGHT" styleClass="statsList" stylesheets="@../../styles/styles.css" />
+         </HBox>
+         <ImageView fx:id="goBackButton" onMouseClicked="#returnToMain" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" styleClass="child">
+            <Image url="@../../assets/buttons/goBackBtn.png" />
+         </ImageView>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" styleClass="containerBackground" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.StartScreenController">
+   <top>
+      <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+         <Image url="@../../assets/sceneElements/label.png" />
+      </ImageView>
+   </top>
+   <center>
+      <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <GridPane alignment="CENTER">
+            <columnConstraints>
+               <ColumnConstraints halignment="RIGHT" />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            <ImageView fx:id="loginButton" onMouseClicked="#mouseClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT">
+               <Image url="@../../assets/buttons/loginBtn.png" />
+            </ImageView>
+            <ImageView fx:id="leaderboardBtn" onMouseClicked="#mouseClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <Image url="@../../assets/buttons/leaderBoardBtn.png" />
+            </ImageView>
+            <ImageView fx:id="settingsButton" onMouseClicked="#mouseClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+               <Image url="@../../assets/buttons/settingsBtn.png" />
+            </ImageView>
+            <ImageView fx:id="signUpButton" onMouseClicked="#mouseClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+               <Image url="@../../assets/buttons/signUpBtn.png" />
+            </ImageView>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </GridPane>
+         <ImageView fx:id="quitButton" fitHeight="300.0" fitWidth="400.0" onMouseClicked="#mouseClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" styleClass="child">
+            <Image url="@../../assets/buttons/quitBtn.png" />
+         </ImageView>
+      </VBox>
+   </center>
+   <bottom>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="child" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

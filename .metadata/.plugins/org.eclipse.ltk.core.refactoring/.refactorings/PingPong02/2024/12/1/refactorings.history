@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;application.Ball01&apos; to &apos;Ball02&apos;&#x0D;&#x0A;- Original project: &apos;PingPong02&apos;&#x0D;&#x0A;- Original element: &apos;application.Ball01&apos;&#x0D;&#x0A;- Renamed element: &apos;application.Ball02&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ball01&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;application{Ball01.java[Ball01" matchStrategy="1" name="Ball02" qualified="false" references="true" similarDeclarations="false" stamp="1735674706132" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;application.OGC21&apos; to &apos;OGC22&apos;&#x0D;&#x0A;- Original project: &apos;OfflineGames22&apos;&#x0D;&#x0A;- Original element: &apos;application.OGC21&apos;&#x0D;&#x0A;- Renamed element: &apos;application.OGC22&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;OGC21&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;application{OGC21.java[OGC21" matchStrategy="1" name="OGC22" qualified="false" references="true" similarDeclarations="false" stamp="1735592198166" textual="false" version="1.0"/>
+</session>

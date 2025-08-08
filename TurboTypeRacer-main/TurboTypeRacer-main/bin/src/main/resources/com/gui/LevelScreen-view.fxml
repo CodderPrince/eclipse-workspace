@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="firstMap" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.LevelScreenController">
+   <bottom>
+      <HBox alignment="CENTER_LEFT" spacing="720.0" BorderPane.alignment="CENTER">
+         <ImageView fitHeight="84.0" fitWidth="80.0" onMouseClicked="#goBack" onMouseEntered="#animationPop" onMouseExited="#animationPopUp">
+            <Image url="@../../assets/buttons/goBack.png" />
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </ImageView>
+         <TextField onKeyPressed="#checkText" prefWidth="292.0" styleClass="typeField" stylesheets="@../../styles/styles.css">
+            <font>
+               <Font size="60.0" />
+            </font>
+         </TextField>
+      </HBox>
+   </bottom>
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <AnchorPane prefHeight="872.0" prefWidth="1831.0">
+            <ImageView fx:id="computerCar" fitHeight="136.0" fitWidth="200.0" layoutX="1233.0" layoutY="596.0" style="-fx-background-color: black;">
+               <Image url="@../../assets/vehicles/car1.gif" />
+            </ImageView>
+            <ImageView fx:id="playerCar" fitHeight="136.0" fitWidth="200.0" layoutX="1030.0" layoutY="701.0" style="-fx-background-color: black;">
+               <Image url="@../../assets/vehicles/car1.gif" />
+            </ImageView>
+         </AnchorPane>
+         <VBox fx:id="endBox" alignment="CENTER" visible="false">
+            <ImageView fx:id="result" fitHeight="269.0" fitWidth="717.0">
+               <Image url="@../../assets/sceneElements/youWinTitle.png" />
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="307.0" onMouseClicked="#goBack">
+               <Image url="@../../assets/buttons/goBackBtn.png" />
+            </ImageView>
+         </VBox>
+      </StackPane>
+   </center>
+   <right>
+      <VBox fx:id="vBox" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+         <ImageView fitHeight="81.0" fitWidth="89.0">
+            <Image url="@../../assets/sceneElements/heart.png" />
+         </ImageView>
+         <ImageView fitHeight="81.0" fitWidth="89.0">
+            <Image url="@../../assets/sceneElements/heart.png" />
+         </ImageView>
+         <ImageView fitHeight="81.0" fitWidth="89.0">
+            <Image url="@../../assets/sceneElements/heart.png" />
+         </ImageView>
+      </VBox>
+   </right>
+   <top>
+      <Label fx:id="wordLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial" size="70.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

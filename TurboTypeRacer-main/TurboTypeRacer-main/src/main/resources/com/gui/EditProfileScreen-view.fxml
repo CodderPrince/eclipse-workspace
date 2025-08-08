@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" styleClass="containerBackground" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.EditProfileScreenController">
+    <top>
+        <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="100.0" />
+            </BorderPane.margin>
+            <Image url="@../../assets/sceneElements/label.png" />
+        </ImageView>
+    </top>
+   <center>
+        <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="674.0" prefWidth="1922.0" styleClass="container" stylesheets="@../../styles/styles.css" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <HBox alignment="CENTER" prefHeight="364.0" prefWidth="1880.0">
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <HBox.margin>
+                        <Insets right="30.0" />
+                    </HBox.margin>
+                    <ImageView fx:id="blueIcon" fitHeight="200.0" fitWidth="199.0" onMouseClicked="#chooseImage">
+                        <VBox.margin>
+                            <Insets />
+                        </VBox.margin>
+                        <Image url="@../../assets/profile/profileIconBlue.png" />
+                    </ImageView>
+                    <ImageView fx:id="greenIcon" fitHeight="200.0" fitWidth="199.0" onMouseClicked="#chooseImage">
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                        <Image url="@../../assets/profile/profileIconGreen.png" />
+                    </ImageView>
+                </VBox>
+                <VBox prefHeight="266.0" prefWidth="351.0">
+                    <TextField fx:id="userNameTextField" alignment="CENTER" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" prefHeight="380.0" prefWidth="400.0" promptText="Username" styleClass="textField" stylesheets="@../../styles/styles.css">
+                        <font>
+                            <Font size="27.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets bottom="30.0" />
+                        </VBox.margin>
+                    </TextField>
+                    <PasswordField fx:id="passwordField" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" prefHeight="380.0" prefWidth="400.0" promptText="Password" styleClass="textField" stylesheets="@../../styles/styles.css">
+                        <font>
+                            <Font size="27.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets bottom="30.0" />
+                        </VBox.margin>
+                    </PasswordField>
+                    <TextField fx:id="phoneNumberField" alignment="CENTER" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" prefHeight="380.0" prefWidth="400.0" promptText="PhoneNumber" styleClass="textField" stylesheets="@../../styles/styles.css">
+                        <font>
+                            <Font size="27.0" />
+                        </font>
+                    </TextField>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                    <ImageView fx:id="purpleIcon" fitHeight="200.0" fitWidth="199.0" onMouseClicked="#chooseImage">
+                        <Image url="@../../assets/profile/profileIconPurple.png" />
+                    </ImageView>
+                    <ImageView fx:id="redIcon" fitHeight="200.0" fitWidth="199.0" onMouseClicked="#chooseImage">
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                        <Image url="@../../assets/profile/profileIconRed.png" />
+                    </ImageView>
+                </VBox>
+            </HBox>
+            <ImageView onMouseClicked="#updateClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../assets/buttons/updateBtn.png" />
+            </ImageView>
+            <ImageView fx:id="goBackButton" onMouseClicked="#returnToMain" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../assets/buttons/goBackBtn.png" />
+            </ImageView>
+        </VBox>
+   </center>
+</BorderPane>

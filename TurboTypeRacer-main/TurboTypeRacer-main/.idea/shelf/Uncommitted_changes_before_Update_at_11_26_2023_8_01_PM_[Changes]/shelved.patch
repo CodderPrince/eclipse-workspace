@@ -1,0 +1,88 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e4349fe6-15ab-47f3-8c96-c940a2b89be7\" name=\"Changes\" comment=\"Added login and signup screen\">\r\n      <change afterPath=\"$PROJECT_DIR$/players.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/gui/EditProfileScreenController.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/gui/MainScreenController.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/gui/ProfileScreenController.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/assets/startScreen/leaderBoardBtn.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/assets/startScreen/levelsBtn.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/assets/startScreen/listBackground.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/assets/startScreen/updateBtn.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/com/gui/EditProfileScreen-view.fxml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/com/gui/MainScreen-view.fxml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/com/gui/ProfileScreen-view.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/game/LoginManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/game/LoginManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/game/Player.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/game/Player.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/gui/LoginScreenController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/gui/LoginScreenController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/gui/SignUpScreenController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/gui/SignUpScreenController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/gui/StartScreenController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/gui/StartScreenController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/gui/StartScreen-view.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/gui/StartScreen-view.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/styles/styles.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/styles/styles.css\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YUpMGDf7sxUNVVrAGzQDYRHC0U\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"G:/giorgos_spinkl/IdeaProjects/TurboTypeRacer/src/main/resources/com/gui\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"G:\\giorgos_spinkl\\IdeaProjects\\TurboTypeRacer\\src\\main\\resources\\com\\gui\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"G:\\giorgos_spinkl\\IdeaProjects\\TurboTypeRacer\\src\\main\\resources\\com\\gui\" />\r\n      <recent name=\"C:\\Users\\xriso\\IdeaProjects\\TurboTypeRacer\\src\\main\\resources\\assets\\startScreen\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.gui\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"StartScreen\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.gui.StartScreen\" />\r\n      <module name=\"TurboTypeRacer\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.turbotyperacer.turbotyperacer.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StartScreen\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.gui.StartScreen\" />\r\n      <module name=\"TurboTypeRacer\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.gui.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.StartScreen\" />\r\n        <item itemvalue=\"Application.StartScreen\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e4349fe6-15ab-47f3-8c96-c940a2b89be7\" name=\"Changes\" comment=\"\" />\r\n      <created>1700589963008</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700589963008</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial Libs Setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700590529324</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700590529324</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial Libs Setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700591399064</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700591399064</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"Initial Libs Setup\" />\r\n    <MESSAGE value=\"Added login and signup screen\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added login and signup screen\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0718be957c90c57cace1e8035de7545d1aa35da7)
++++ b/.idea/workspace.xml	(date 1700749111332)
+@@ -4,27 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e4349fe6-15ab-47f3-8c96-c940a2b89be7" name="Changes" comment="Added login and signup screen">
++    <list default="true" id="e4349fe6-15ab-47f3-8c96-c940a2b89be7" name="Changes" comment="Added (profile, stats, updateProfile) screens">
+       <change afterPath="$PROJECT_DIR$/players.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/EditProfileScreenController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/MainScreenController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/ProfileScreenController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/startScreen/leaderBoardBtn.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/startScreen/levelsBtn.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/startScreen/listBackground.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/startScreen/updateBtn.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/gui/EditProfileScreen-view.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/gui/MainScreen-view.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/gui/ProfileScreen-view.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/game/LoginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/game/LoginManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/game/Player.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/LoginScreenController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/SignUpScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/SignUpScreenController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/StartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/StartScreenController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/gui/StartScreen-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/gui/StartScreen-view.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/styles.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -41,7 +23,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="main" />
++        <entry key="$PROJECT_DIR$" value="master" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -143,7 +125,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1700591399064</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Added (profile, stats, updateProfile) screens">
++      <option name="closed" value="true" />
++      <created>1700749033012</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1700749033012</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -176,6 +166,7 @@
+     </ignored-roots>
+     <MESSAGE value="Initial Libs Setup" />
+     <MESSAGE value="Added login and signup screen" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added login and signup screen" />
++    <MESSAGE value="Added (profile, stats, updateProfile) screens" />
++    <option name="LAST_COMMIT_MESSAGE" value="Added (profile, stats, updateProfile) screens" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: players.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/players.txt b/players.txt
+new file mode 100644
+--- /dev/null	(date 1700748856126)
++++ b/players.txt	(date 1700748856126)
+@@ -0,0 +1,2 @@
++�� sr java.util.ArrayListx����a� I sizexp   w   sr com.game.PlayerC(�]�� L namet Ljava/lang/String;L passwordq ~ L phoneNumberq ~ L profileImageq ~ L scoreMapt Ljava/util/HashMap;xpt test1t test1t test1t cfile:/C:/Users/xriso/IdeaProjects/TurboTypeRacer/target/classes/assets/profile/profileIconGreen.pngsr java.util.HashMap���`� F 
++loadFactorI 	thresholdxp?@     w      sr java.lang.Integer⠤���8 I valuexr java.lang.Number������  xp    q ~ sq ~    q ~ sq ~    q ~ xx
+\ No newline at end of file

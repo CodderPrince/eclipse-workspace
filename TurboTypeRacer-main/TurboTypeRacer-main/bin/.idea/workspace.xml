@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TurboTypeRacer:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4349fe6-15ab-47f3-8c96-c940a2b89be7" name="Changes" comment="Levels are now ordered on the leaderboard and the level selection screen. Made jar file">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TurboTypeRacer_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TurboTypeRacer.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/game/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/game/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/game/LevelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/game/LevelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/LeaderBoardScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/LeaderBoardScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/LevelScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/LevelScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/LevelSelectionScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/LevelSelectionScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/SettingsScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/SettingsScreenController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="0718be957c90c57cace1e8035de7545d1aa35da7" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5e6a93e5-0209-4a96-8559-e38386dbb48b" />
+        <option name="url" value="https://github.com/cppenloglou/TurboTypeRacer" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2YUpMGDf7sxUNVVrAGzQDYRHC0U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/giorgos_spinkl/Downloads/openjfx-21.0.1_windows-x64_bin-sdk/javafx-sdk-21.0.1/bin/vcruntime140_1.dll",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.game" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xriso\IdeaProjects\TurboTypeRacer\target\classes" />
+      <recent name="G:\giorgos_spinkl\IdeaProjects\TurboTypeRacer\target\classes" />
+      <recent name="G:\giorgos_spinkl\IdeaProjects\TurboTypeRacer\src\main\resources\levelDb" />
+      <recent name="G:\giorgos_spinkl\IdeaProjects\TurboTypeRacer\src\main\resources\com\gui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xriso\IdeaProjects\TurboTypeRacer\src\main\resources\sounds" />
+      <recent name="G:\giorgos_spinkl\IdeaProjects\TurboTypeRacer\src\main\resources\assets\sceneElements" />
+      <recent name="G:\giorgos_spinkl\IdeaProjects\TurboTypeRacer\src\main\resources\assets\backgrounds" />
+      <recent name="G:\giorgos_spinkl\IdeaProjects\TurboTypeRacer\src\main\resources" />
+      <recent name="G:\giorgos_spinkl\IdeaProjects\TurboTypeRacer\src\main\resources\game" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gui" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StartScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gui.StartScreen" />
+      <module name="TurboTypeRacer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.turbotyperacer.turbotyperacer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gui.StartScreen" />
+      <module name="TurboTypeRacer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StartScreen" />
+        <item itemvalue="Application.StartScreen" />
+        <item itemvalue="Application.StartScreen" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4349fe6-15ab-47f3-8c96-c940a2b89be7" name="Changes" comment="" />
+      <created>1700589963008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700589963008</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial Libs Setup">
+      <option name="closed" value="true" />
+      <created>1700590529324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700590529324</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial Libs Setup">
+      <option name="closed" value="true" />
+      <created>1700591399064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700591399064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Made Login manager use static methods, fixed path bug, added a LeaderBoard, levels, and a level selection screen.">
+      <option name="closed" value="true" />
+      <created>1700924901110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700924901110</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made the login manager use static methods, fixed path bug when reading playerdb, added a leaderBoard, levels, and a level selection screen.">
+      <option name="closed" value="true" />
+      <created>1700924977452</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700924977452</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added comments to the code">
+      <option name="closed" value="true" />
+      <created>1700955851776</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700955851776</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Levels are now ordered on the leaderboard and the level selection screen. Made jar file">
+      <option name="closed" value="true" />
+      <created>1701538024559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701538024559</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Levels are now ordered on the leaderboard and the level selection screen. Made jar file">
+      <option name="closed" value="true" />
+      <created>1701538167962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701538167962</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Levels are now ordered on the leaderboard and the level selection screen. Made jar file">
+      <option name="closed" value="true" />
+      <created>1701538348276</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701538348276</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial Libs Setup" />
+    <MESSAGE value="Added login and signup screen" />
+    <MESSAGE value="Made Login manager use static methods, fixed path bug, added a LeaderBoard, levels, and a level selection screen." />
+    <MESSAGE value="Made the login manager use static methods, fixed path bug when reading playerdb, added a leaderBoard, levels, and a level selection screen." />
+    <MESSAGE value="Added comments to the code" />
+    <MESSAGE value="Added words to type for 25 levels, finished car movement, added tutorial screen, fixed screens not displaying on center certain panes" />
+    <MESSAGE value="Levels are now ordered on the leaderboard and the level selection screen. Made jar file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Levels are now ordered on the leaderboard and the level selection screen. Made jar file" />
+  </component>
+</project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" styleClass="containerBackground" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.LeaderBoardScreenController">
+    <top>
+        <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <Image url="@../../assets/sceneElements/label.png" />
+            <BorderPane.margin>
+                <Insets top="100.0" />
+            </BorderPane.margin>
+        </ImageView>
+    </top>
+   <center>
+        <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <FlowPane alignment="CENTER" VBox.vgrow="ALWAYS">
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+                <TabPane fx:id="tabPane" prefHeight="591.0" prefWidth="1222.0" styleClass="tabPane" stylesheets="@../../styles/styles.css" tabClosingPolicy="UNAVAILABLE">
+                    <Tab text="Level 1" />
+                </TabPane>
+            </FlowPane>
+            <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                <ImageView fitWidth="418.0" onMouseClicked="#exportScores" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../../assets/buttons/exportBtn.png" />
+                </ImageView>
+                <ImageView fx:id="goBackButton" onMouseClicked="#returnToMain" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../../assets/buttons/goBackBtn.png" />
+                </ImageView>
+            </HBox>
+        </VBox>
+   </center>
+</BorderPane>

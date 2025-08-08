@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" styleClass="containerBackground" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.SettingsScreenController">
+   <top>
+       <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+           <BorderPane.margin>
+               <Insets top="100.0" />
+           </BorderPane.margin>
+           <Image url="@../../assets/sceneElements/label.png" />
+       </ImageView>
+   </top>
+   <bottom>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="child" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+       <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" styleClass="container" stylesheets="@../../styles/styles.css" BorderPane.alignment="CENTER">
+         <CheckBox fx:id="fullscreenCheckBox" minHeight="150.0" minWidth="400.0" mnemonicParsing="false" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" styleClass="checkBox" stylesheets="@../../styles/styles.css" text="FullScreen">
+            <font>
+               <Font size="35.0" />
+            </font>
+            <padding>
+               <Insets left="70.0" />
+            </padding>
+         </CheckBox>
+         <CheckBox fx:id="musicCheckBox" minHeight="150.0" minWidth="400.0" mnemonicParsing="false" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" styleClass="checkBox" stylesheets="@../../styles/styles.css" text="Music">
+            <font>
+               <Font size="35.0" />
+            </font>
+            <padding>
+               <Insets left="70.0" />
+            </padding>
+         </CheckBox>
+         <CheckBox fx:id="soundEffectsCheckBox" minHeight="150.0" minWidth="400.0" mnemonicParsing="false" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" styleClass="checkBox" stylesheets="@../../styles/styles.css" text="SoundEffects">
+            <font>
+               <Font size="35.0" />
+            </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <padding>
+               <Insets left="70.0" />
+            </padding>
+         </CheckBox>
+           <ImageView onMouseClicked="#saveSettingsClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" styleClass="child">
+               <Image url="@../../assets/buttons/saveBtn.png" />
+           </ImageView>
+           <ImageView fx:id="goBackButton" onMouseClicked="#returnToMain" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" styleClass="child">
+               <Image url="@../../assets/buttons/goBackBtn.png" />
+           </ImageView>
+       </VBox>
+   </center>
+</BorderPane>

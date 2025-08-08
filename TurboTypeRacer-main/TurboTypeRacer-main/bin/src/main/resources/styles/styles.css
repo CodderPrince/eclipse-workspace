@@ -1,0 +1,236 @@
+.containerBackground {
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100% 100%;
+  -fx-background-image: url("../assets/backgrounds/mainBackgroundTheme.jpg");
+}
+
+.textField {
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-image: url("../assets/buttons/backgroundBtn.png");
+    -fx-alignment: center;
+    -fx-text-fill: black;
+}
+
+.levelPane {
+    -fx-background-color: black;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("../assets/backgrounds/listBackground.png");
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+}
+
+.levelPane .viewport {
+    -fx-background-color: transparent;
+}
+
+.levelPane .scroll-bar{
+    -fx-background-color: #BD2237;
+}
+
+.levelPane .scroll-bar:vertical .scroll-bar:horizontal{
+    -fx-background-color: #981b2b;
+}
+
+.levelPane .scroll-bar:vertical .scroll-bar:horizontal  .increment-button,
+.levelPane .scroll-bar:vertical .scroll-bar:horizontal  .decrement-button {
+    -fx-background-color: #981b2b;
+}
+
+.levelPane .scroll-bar:horizontal .thumb,
+.levelPane .scroll-bar:vertical .thumb {
+    -fx-background-color: #981b2b;
+}
+
+.levelPane > .corner{
+    -fx-background-color: #981b2b;
+}
+
+.statsList{
+    -fx-text-fill: gold;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../assets/backgrounds/listBackground.png");
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+}
+
+.statsList .list-cell {
+    -fx-text-fill: rgb(179, 151, 2);
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+    -fx-cell-size: 35px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+}
+
+.statsList .list-cell:selected {
+    -fx-border-color: gold;
+    -fx-border-style: solid;
+    -fx-text-fill: gold;
+    -fx-border-radius: 60%;
+}
+
+.statsList .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-visibility: hidden;
+    -fx-scale-x: 0;
+}
+
+.tabPane {
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../assets/backgrounds/listBackground.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.tabPane .tab
+{
+    -fx-background-color: #981b2b;
+}
+
+.tabPane .tab-header-background{
+    -fx-background-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #981b2b;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: gold;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #981b2b;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #BD2237;
+}
+
+.table-row-cell .table-cell {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-alignment: CENTER;
+    -fx-text-fill: gold;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar{
+    -fx-background-color: #BD2237;
+}
+
+.table-view .scroll-bar:vertical .scroll-bar:horizontal{
+    -fx-background-color: #981b2b;
+}
+
+
+.table-view .scroll-bar:vertical .scroll-bar:horizontal  .increment-button,
+.table-view .scroll-bar:vertical .scroll-bar:horizontal  .decrement-button {
+    -fx-background-color: #981b2b;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #981b2b;
+}
+
+.centered-label {
+    -fx-alignment: bottom-center;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 27px;
+    -fx-effect: dropshadow(gaussian, white, 5, 0, 0, 0)
+}
+
+.checkBox{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../assets/buttons/backgroundBtn.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-padding: 0 0 0 70;
+    -fx-font-size: 35px;
+}
+
+.checkBox .box {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../assets/backgrounds/listBackground.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.checkBox:selected .box .mark {
+    -fx-background-color: black;
+}
+
+.check-box:selected .text{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 70;
+    -fx-font-size: 35px;
+}
+
+.carVbox {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../assets/backgrounds/listBackground.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.firstMap {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../assets/backgrounds/map1.gif");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.typeField {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../assets/backgrounds/listBackground.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+}
+

@@ -1,0 +1,15 @@
+.root {
+    -fx-background-color: #000; /* Dark background for better neon effect */
+}
+
+.button {
+    -fx-background-radius: 15;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(gaussian, cyan, 50, 0, 0, 0);
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}

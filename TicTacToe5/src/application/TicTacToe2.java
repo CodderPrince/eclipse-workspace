@@ -1,0 +1,528 @@
+/**********************
+ * Tic Tac Toe
+ * Developed by PRINCE
+ **********************/
+
+package application;
+
+import java.util.Stack;
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+public class TicTacToe2 extends Application {
+	/*************************************
+	 * Create Some private type Variables
+	 *************************************/
+
+	// Variables for the current player, game buttons, game mode, and move history
+	private String currentPlayer = "❌";
+
+	private Button[][] buttons = new Button[3][3];
+	// 3 x 3 grid buttons array to store value
+
+	private boolean isPlayerVsComputer = false;
+	// Indicates whether the game is against the computer
+
+	// private Random random = new Random();
+	// Random generator for computer moves
+
+	/*
+	 * Use stack cause stack is use LIFO method When use undo button then delete the
+	 * last operation
+	 */
+	private Stack<int[]> moveHistory = new Stack<>();
+	// Stores the history of moves for the undo functionality
+
+	@Override
+	/****************
+	 * Main Window
+	 * 
+	 * Primary Title
+	 ****************/
+	public void start(Stage primaryStage) {
+		// Set the window title and show the start menu
+		primaryStage.setTitle("Tic Tac Toe | Developed by PRINCE");
+		// Use of | as a separator
+
+		VBox menu = createStartMenu(primaryStage);
+
+		// first dialogue box width and height
+		Scene scene = new Scene(menu, 450, 450);
+
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+
+	/*********************
+	 * Start Menu Window
+	 * 
+	 * First Dialogue Box
+	 *********************/
+	private VBox createStartMenu(Stage primaryStage) {
+
+		// Create labels and buttons for the start menu
+		Label chooseModeLabel = new Label("Choose Game Mode");
+		chooseModeLabel.setStyle("-fx-font-size: 40px;" + " -fx-font-weight: bold; -fx-text-fill: white;");
+		// Label chooseModeLabel1 = new Label("prince");
+		// chooseModeLabel1.setStyle("-fx-font-size: 40px;
+		// -fx-font-weight: bold; -fx-text-fill: white;");
+
+		Button pvpButton = new Button("Player vs Player");
+		pvpButton.setStyle("-fx-font-size: 44px;" + " -fx-font-weight: bold; -fx-background-color: #4CAF50;"
+				+ " -fx-text-fill: white;");
+		pvpButton.setOnAction(e -> startGame(primaryStage, false));
+
+		Button pvcButton = new Button("Player vs Computer");
+		pvcButton.setStyle("-fx-font-size: 38px; -fx-font-weight: bold;"
+				+ " -fx-background-color: #2196F3; -fx-text-fill: white;");
+		pvcButton.setOnAction(e -> startGame(primaryStage, true));
+
+		// VBox layout for holding the labels and buttons
+		// 70 means button lines gap means vertical gap
+		VBox menu = new VBox(70, chooseModeLabel, pvpButton, pvcButton);
+		menu.setAlignment(Pos.CENTER);
+		// set position at center
+
+		// first dialogue box bg color
+		menu.setStyle("-fx-background-color: linear-gradient(to bottom right, #0B486B, #F56217);");
+		return menu;
+	}
+
+	/*********************
+	 * Start Game Menu
+	 * 
+	 * First Dialogue Box
+	 *********************/
+	private void startGame(Stage primaryStage, boolean playerVsComputer) {
+
+		// Setup the game grid and controls based on selected mode
+		isPlayerVsComputer = playerVsComputer;
+		currentPlayer = "❌";
+		// start with player X
+
+		// here use ternary operator instead of if else condition
+		// Label modeLabel = new Label(isPlayerVsComputer ? "Player vs Computer" :
+		// "Player vs Player");
+
+		// use if-else condition for better understanding
+		Label modeLabel;
+		if (isPlayerVsComputer) {
+			modeLabel = new Label("Player vs Computer");
+		} else {
+			modeLabel = new Label("Player vs Player");
+		}
+
+		/*
+		 * In Game Mode at Top Position Show Currently Which mode is use
+		 */
+		modeLabel.setStyle(
+				"-fx-font-size: 25px; -fx-text-fill: blue; -fx-font-family: 'Arial, MT Rounded'; -fx-font-weight: bold;");
+
+		// create the Back Button
+		Button backButton = new Button("Back");
+		backButton.setStyle("-fx-font-size: 22px;" + " -fx-background-color: #4CAF50;" + " -fx-text-fill: white;"
+				+ " -fx-font-family: 'Arial, MT Rounded';" + "-fx-font-weight: bold;");
+
+		backButton.setOnAction(e -> {
+			// Go back to the start menu
+			VBox menu = createStartMenu(primaryStage);
+			Scene menuScene = new Scene(menu, 450, 450);
+			primaryStage.setScene(menuScene);
+		});
+
+		// Use an AnchorPane for custom positioning
+		AnchorPane topBar = new AnchorPane();
+		topBar.setPadding(new Insets(10)); // Add padding around the pane
+
+		// Add the Back Button and modeLabel to the AnchorPane
+		topBar.getChildren().addAll(backButton, modeLabel);
+
+		// Set custom positions for the Back Button and modeLabel
+		AnchorPane.setLeftAnchor(backButton, 10.0); // Back Button 10px from the left
+		AnchorPane.setTopAnchor(backButton, 5.0); // Back Button 5px from the top
+
+		AnchorPane.setTopAnchor(modeLabel, 5.0); // Mode Label 5px from the top
+		AnchorPane.setLeftAnchor(modeLabel, 130.0); // Custom position for Mode Label (adjust as needed)
+
+		// create object for grid
+		GridPane grid = createGameGrid();
+
+		// undo button style
+		Button undoButton = new Button("Undo");
+		undoButton.setStyle("-fx-font-size: 17px;" + " -fx-background-color: #FF1744;" + " -fx-text-fill: white;"
+				+ " -fx-font-family: 'Arial, MT Rounded';" + "-fx-font-weight: bold;");
+
+		/*
+		 * Here use lambda function Lambda function is directly access to the register
+		 */
+		undoButton.setOnAction(e -> undoLastMove());
+
+		/*
+		 * Create the layout based on game mode
+		 * 
+		 * If Player vs Computer mode, exclude the undo button
+		 */
+		VBox gameContent;
+		if (!isPlayerVsComputer) {
+			// Player vs Player mode, include undo button
+			gameContent = new VBox(9, grid, undoButton);
+		} else {
+			// Player vs Computer mode, do not include undo button
+			gameContent = new VBox(9, grid);
+		}
+		gameContent.setAlignment(Pos.CENTER);
+
+		/*
+		 * Combine topBar and gameContent into a vertical layout
+		 */
+		VBox root = new VBox(10, topBar, gameContent);
+		root.setAlignment(Pos.CENTER);
+		root.setPadding(new Insets(10));
+
+		/*
+		 * Set light gradient background color dynamically
+		 * 
+		 * PvP: Light blue gradient background PvC: Light orange gradient background
+		 */
+		if (!isPlayerVsComputer) {
+			// Player vs Player light lavender gradient background
+			root.setStyle("-fx-background-color: linear-gradient(to bottom right, #F3E5F5, #E1BEE7);");
+		} else {
+			// Player vs Computer light peach gradient background
+			root.setStyle("-fx-background-color: linear-gradient(to bottom right, #FFE0B2, #FFCC80);");
+		}
+
+		/*
+		 * Second dialogue box dimension width x height
+		 */
+		Scene scene = new Scene(root, 450, 570);
+		primaryStage.setScene(scene);
+	}
+
+	/************************
+	 * Create Game Grid Menu
+	 * 
+	 * Second Dialogue Box
+	 ************************/
+	private GridPane createGameGrid() {
+		// Initialize the game grid with buttons
+		GridPane grid = new GridPane();
+		grid.setAlignment(Pos.CENTER);
+		grid.setVgap(10); // Vertical gap
+		grid.setHgap(10); // Horizontal gap
+		grid.setPadding(new Insets(20)); // padding of grid
+
+		/*
+		 * Set dark gradient backgrounds dynamically
+		 * 
+		 * PvP: Dark blue gradient background PvC: Dark orange gradient background
+		 */
+		if (!isPlayerVsComputer) {
+			// Player vs Player dark blue gradient background
+			grid.setStyle("-fx-background-color: linear-gradient(to bottom right, #0D1F2D, #1B3B5F);"
+					+ " -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 10);");
+		} else {
+			// Player vs Computer dark orange gradient background
+			grid.setStyle("-fx-background-color: linear-gradient(to bottom right, #3E1E00, #5C3C00);"
+					+ " -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 10);");
+		}
+
+		// use shadow for two player X & O
+		DropShadow neonEffectX = new DropShadow(20, Color.RED);
+		DropShadow neonEffectO = new DropShadow(20, Color.CYAN);
+
+		// fill up the grid
+		for (int row = 0; row < 3; row++) {
+			for (int col = 0; col < 3; col++) {
+				Button button = new Button("");
+				// create total 9 buttons
+
+				button.setMinSize(120, 120);
+				// set every button dimension
+
+				button.setStyle("-fx-font-size: 40px;" + " -fx-font-weight: bold; -fx-text-fill: #000000;");
+				int r = row, c = col;
+
+				// set lambda function when click any button then show effects
+				button.setOnAction(e -> handleButtonPress(button, r, c, neonEffectX, neonEffectO));
+
+				// store value in specific array
+				buttons[row][col] = button;
+
+				// in grid add button, col and row perfectly
+				grid.add(button, col, row);
+			}
+		}
+
+		// return grid to check where i can move
+		return grid;
+	}
+
+	/**********************
+	 * Handle Button Press
+	 * 
+	 * Second Dialogue Box
+	 **********************/
+	private void handleButtonPress(Button button, int row, int col, DropShadow neonEffectX, DropShadow neonEffectO) {
+
+		// Handle button presses during the game
+		if (button.getText().isEmpty()) {
+			button.setText(currentPlayer);
+			if (currentPlayer.equals("❌")) {
+				button.setStyle("-fx-font-size: 40px;" + " -fx-font-weight: bold;" + " -fx-text-fill: #FF0000;");
+				button.setEffect(neonEffectX);
+			} else {
+				button.setStyle("-fx-font-size: 40px;" + " -fx-font-weight: bold;" + " -fx-text-fill: #0000FF;");
+				button.setEffect(neonEffectO);
+			}
+
+			/*
+			 * Check my next movement where can i press
+			 */
+			moveHistory.push(new int[] { row, col });
+
+			// if win
+			if (checkWin()) {
+				showAlert("Player " + currentPlayer + " wins!");
+				resetBoard();
+				// when click ok then reset the board
+
+			} else if (isBoardFull()) {
+				showAlert("It's a draw!");
+				resetBoard();
+				// when click ok then reset the board
+
+			} else {
+				switchPlayer();
+				// give another player change to press button
+			}
+		}
+	}
+
+	/**********************
+	 * Check Win Logic
+	 * 
+	 * Second Dialogue Box
+	 **********************/
+	private boolean checkWin() {
+		// Check for winning conditions on the board
+		for (int i = 0; i < 3; i++) {
+
+			// check every row
+			if (!buttons[i][0].getText().isEmpty() && buttons[i][0].getText().equals(buttons[i][1].getText())
+					&& buttons[i][1].getText().equals(buttons[i][2].getText())) {
+				return true;
+			}
+
+			// check every columns
+			if (!buttons[0][i].getText().isEmpty() && buttons[0][i].getText().equals(buttons[1][i].getText())
+					&& buttons[1][i].getText().equals(buttons[2][i].getText())) {
+				return true;
+			}
+		}
+
+		// check diagonal
+		if (!buttons[0][0].getText().isEmpty() && buttons[0][0].getText().equals(buttons[1][1].getText())
+				&& buttons[1][1].getText().equals(buttons[2][2].getText())) {
+			return true;
+		}
+
+		// check anti diagonal
+		if (!buttons[0][2].getText().isEmpty() && buttons[0][2].getText().equals(buttons[1][1].getText())
+				&& buttons[1][1].getText().equals(buttons[2][0].getText())) {
+			return true;
+		}
+		return false;
+	}
+
+	/**************************
+	 * Board Full or not logic
+	 **************************/
+	private boolean isBoardFull() {
+		// Check if all board spaces are filled
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				if (buttons[i][j].getText().isEmpty()) {
+					return false;
+					// that means it is draw
+				}
+			}
+		}
+		return true;
+	}
+
+	/********************
+	 * Reset Board Logic
+	 ********************/
+	private void resetBoard() {
+		// Reset the board to start a new game
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				buttons[i][j].setText("");
+				buttons[i][j].setEffect(null);
+			}
+		}
+
+		// after resetting board start with player X
+		currentPlayer = "❌";
+		moveHistory.clear();
+	}
+
+	/*********************
+	 * Switch Player Logic
+	 *********************/
+	private void switchPlayer() {
+		// Switch the current player and check for computer's turn
+		if (currentPlayer.equals("❌")) {
+			currentPlayer = "⭕";
+		} else {
+			currentPlayer = "❌";
+		}
+
+		if (isPlayerVsComputer && currentPlayer.equals("⭕")) {
+			computerMove();
+		}
+	}
+
+	/***********************
+	 * Computer Move
+	 * 
+	 * MiniMax Algorithm:
+	 ***********************/
+	private void computerMove() {
+		int[] bestMove = findBestMove();
+		handleButtonPress(buttons[bestMove[0]][bestMove[1]], bestMove[0], bestMove[1], null,
+				new DropShadow(20, Color.CYAN));
+	}
+
+	/*****************
+	 * Find Best Move
+	 *****************/
+	private int[] findBestMove() {
+		int bestScore = Integer.MIN_VALUE;
+		int[] bestMove = { -1, -1 };
+
+		for (int row = 0; row < 3; row++) {
+			for (int col = 0; col < 3; col++) {
+				if (buttons[row][col].getText().isEmpty()) {
+					// Simulate the move
+					buttons[row][col].setText("⭕");
+					int score = minimax(false); // Start with minimizing for the opponent
+					buttons[row][col].setText(""); // Undo the move
+
+					if (score > bestScore) {
+						bestScore = score;
+						bestMove = new int[] { row, col };
+					}
+				}
+			}
+		}
+		return bestMove;
+	}
+
+	/**************************************************
+	 * 
+	 * This Algorithm Ensure for Computer wins or Draw
+	 * 
+	 * MiniMax Algorithm
+	 **************************************************/
+	private int minimax(boolean isMaximizing) {
+		if (checkWin()) {
+			return isMaximizing ? -1 : 1; // Maximizing loses (-1), minimizing wins (1)
+		}
+		if (isBoardFull()) {
+			return 0; // Draw
+		}
+
+		int bestScore = isMaximizing ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+
+		for (int row = 0; row < 3; row++) {
+			for (int col = 0; col < 3; col++) {
+				if (buttons[row][col].getText().isEmpty()) {
+					buttons[row][col].setText(isMaximizing ? "⭕" : "❌"); // Simulate the move
+					int score = minimax(!isMaximizing); // Alternate between players
+					buttons[row][col].setText(""); // Undo the move
+
+					if (isMaximizing) {
+						bestScore = Math.max(score, bestScore);
+					} else {
+						bestScore = Math.min(score, bestScore);
+					}
+				}
+			}
+		}
+		return bestScore;
+	}
+
+	/*****************
+	 * Undo Last Move
+	 *****************/
+	private void undoLastMove() {
+		// Check if there are moves to undo
+		if (!moveHistory.isEmpty()) {
+			// Retrieve and remove the last move from the stack
+			int[] lastMove = moveHistory.pop();
+
+			// Access the button that was last pressed
+			Button lastButton = buttons[lastMove[0]][lastMove[1]];
+
+			// Reset the button to its default state
+			lastButton.setText("");
+			lastButton.setEffect(null);
+
+			// Switch turns back to the other player
+			switchPlayer();
+		}
+	}
+
+	/*********************
+	 * Show Alert Message
+	 *********************/
+	private void showAlert(String message) {
+		Alert alert = new Alert(AlertType.INFORMATION);
+
+		// second dialogue box title
+		alert.setTitle("Game Over");
+		alert.setHeaderText(null);
+		alert.setContentText(message);
+
+		// Create a label for the content to ensure styling is applied
+		Label contentLabel = new Label(message);
+		if (message.contains("wins")) {
+
+			// Determine the color based on the winner
+			String color = message.contains("❌") ? "#FF0000" : "#0000FF";
+			// Red for ❌
+
+			// Blue for ⭕
+			contentLabel.setStyle("-fx-font-size: 20px;" + " -fx-font-weight: bold; -fx-text-fill: " + color + ";");
+		} else {
+			contentLabel.setStyle("-fx-font-size: 20px;" + " -fx-font-weight: bold;" + " -fx-text-fill: #666666;");
+			// Dark grey for draw
+		}
+		alert.getDialogPane().setContent(contentLabel);
+		// Set the customized label as the content of the alert
+
+		alert.showAndWait();
+	}
+
+	/****************
+	 * Main Function
+	 ****************/
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

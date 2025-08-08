@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="containerBackground" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.LoginScreenController">
+   <top>
+      <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+         <Image url="@../../assets/sceneElements/label.png" />
+      </ImageView>
+   </top>
+   <center>
+      <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="961.0" prefWidth="1920.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <GridPane alignment="CENTER">
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <TextField fx:id="userNameTextField" alignment="CENTER" onMouseClicked="#textFieldClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" prefHeight="100.0" prefWidth="390.0" promptText="Username" styleClass="textField" stylesheets="@../../styles/styles.css" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <PasswordField fx:id="passwordField" alignment="CENTER" onMouseClicked="#textFieldClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" prefHeight="100.0" promptText="Password" styleClass="textField" stylesheets="@../../styles/styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </PasswordField>
+            <ImageView fx:id="loginButton" onMouseClicked="#loginClicked" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <Image url="@../../assets/buttons/loginBtn.png" />
+            </ImageView>
+            <ImageView onMouseClicked="#editProfile" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <Image url="@../../assets/buttons/editProfileBtn.png" />
+            </ImageView>
+         </GridPane>
+         <ImageView fx:id="goBackButton" onMouseClicked="#returnToMain" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../assets/buttons/goBackBtn.png" />
+         </ImageView>
+         <Label fx:id="promtLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="typeField" stylesheets="@../../styles/styles.css">
+            <font>
+               <Font name="Arial" size="70.0" />
+            </font>
+         </Label>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

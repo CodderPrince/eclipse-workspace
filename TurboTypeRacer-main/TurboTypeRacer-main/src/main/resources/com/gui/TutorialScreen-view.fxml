@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" styleClass="containerBackground" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.TutorialScreenController">
+   <top>
+      <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+         <Image url="@../../assets/sceneElements/label.png" />
+      </ImageView>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <ImageView fx:id="leftArrow" fitHeight="145.0" fitWidth="200.0" onMouseClicked="#changePage" onMouseExited="#animationPopUp" visible="false">
+            <Image url="@../../assets/buttons/leftBtn.png" />
+         </ImageView>
+         <ImageView fx:id="tutorialInfo">
+            <Image url="@../../assets/tutorial/1.png" />
+         </ImageView>
+         <ImageView fx:id="rightArrow" fitHeight="145.0" fitWidth="200.0" onMouseClicked="#changePage" onMouseEntered="#animationPop" onMouseExited="#animationPopUp">
+            <Image url="@../../assets/buttons/rightBtn.png" />
+         </ImageView>
+      </HBox>
+   </center>
+   <bottom>
+      <ImageView onMouseClicked="#goBack" onMouseEntered="#animationPop" onMouseExited="#animationPopUp" BorderPane.alignment="CENTER">
+         <Image url="@../../assets/buttons/goBackBtn.png" />
+      </ImageView>
+   </bottom>
+</BorderPane>

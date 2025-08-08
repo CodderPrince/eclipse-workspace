@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;application.FlappyBird&apos; to &apos;FlappyBird4&apos;&#x0D;&#x0A;- Original project: &apos;FlappyBird04&apos;&#x0D;&#x0A;- Original element: &apos;application.FlappyBird&apos;&#x0D;&#x0A;- Renamed element: &apos;application.FlappyBird4&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FlappyBird&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;application{FlappyBird.java[FlappyBird" matchStrategy="1" name="FlappyBird4" qualified="false" references="true" similarDeclarations="false" stamp="1735551246684" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,3 @@
+Snake Game (s): 40
+Snake Game (a): 0
+Ping Pong (a): 387

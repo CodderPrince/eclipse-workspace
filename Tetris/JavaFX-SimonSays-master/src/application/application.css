@@ -1,0 +1,64 @@
+/*RED BUTTON*/
+#red {
+	-fx-border-radius: 0.0 0.0 0.0 150.0;
+	-fx-background-radius: 0.0 0.0 0.0 150.0;
+	-fx-background-color: rgb(255.0,0.0,0.0);
+}
+
+#red:pressed {
+	-fx-background-color: rgb(153.0,0.0,0.0);
+}
+
+#red:armed {
+	-fx-background-color: rgb(153.0,0.0,0.0);
+}
+
+/*YELLO BUTTON*/
+#yellow {
+	-fx-border-radius: 150.0 0.0 0.0 0.0;
+	-fx-background-radius: 150.0 0.0 0.0 0.0;
+	-fx-background-color: yellow;
+}
+
+#yellow:pressed {
+	-fx-background-color: rgb(153.0,153.0,0.0);
+}
+
+#yellow:armed {
+	-fx-background-color: rgb(153.0,153.0,0.0);
+}
+
+/*GREEN BUTTON*/
+#green {
+	-fx-border-radius: 0.0 0.0 150.0 0.0;
+	-fx-background-radius: 0.0 0.0 150.0 0.0;
+	-fx-background-color: green;
+}
+
+#green:pressed {
+	-fx-background-color: rgb(0.0,51.0,0.0);
+}
+
+#green:armed {
+	-fx-background-color: rgb(0.0,51.0,0.0);
+}
+
+/*BLUE BUTTON*/
+#blue {
+	-fx-border-radius: 0.0 150.0 0.0 0.0;
+	-fx-background-radius: 0.0 150.0 0.0 0.0;
+	-fx-background-color: blue;
+}
+
+#blue:pressed {
+	-fx-background-color: rgb(26.0,0.0,104.0);
+}
+
+#blue:armed {
+	-fx-background-color: rgb(26.0,0.0,104.0);
+}
+
+/*BACKGROUND*/
+#back {
+	-fx-background-color: black;
+}

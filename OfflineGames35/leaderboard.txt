@@ -1,0 +1,19 @@
+Memory Match (a) [2025-01-13 17:33:14]: 211
+Snake Game (dd) [2025-01-15 11:44:07]: 10
+Tower of Hanoi (a) [2025-01-13 17:33:29]: 395
+Flappy Bird (abc) [2025-01-15 11:41:19]: 1
+2048 Game (a) [2025-01-13 17:36:16]: 235
+Flappy Bird (Mubashir) [2025-01-13 17:05:02]: 6
+Flappy Bird (Noor) [2025-01-13 17:01:27]: 1
+Snake Game (Diya) [2025-01-13 16:59:16]: 35
+Minesweeper (a) [2025-01-13 17:33:49]: 414
+Flappy Bird (a) [2025-01-15 11:36:22]: 4
+Snake Game (Prince) [2025-01-13 16:56:46]: 45
+Snake Game (Noor) [2025-01-13 17:00:06]: 10
+Ping Pong (a) [2025-01-13 17:11:45]: 371
+Snake Game (f) [2025-01-15 11:48:32]: 0
+Snake Game (Shithi) [2025-01-13 16:58:33]: 70
+Snake Game (a) [2025-01-15 11:50:31]: 0
+Snake Game (Mubashir) [2025-01-13 17:02:04]: 60
+Sudoku Solver (a) [2025-01-13 17:34:18]: 480
+Racing Car (a) [2025-01-13 17:37:22]: 152
